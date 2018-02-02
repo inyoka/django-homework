@@ -1,0 +1,37 @@
+html{
+  background: #23395B;
+}
+
+body{
+  vertical-align: center;
+  width: 500px;
+  padding: 20px;
+  margin-top: -25px;
+  margin: auto;
+  margin-bottom: 50px;
+  background: lightblue;
+  text-align: center;
+}
+container{
+  max-width: 970px;
+}
+
+form{
+  font-family: 'Lobster Two', cursive;
+}
+
+h1{
+  font-family: 'Lobster', cursive;
+}
+h2{
+  font-family: 'Lobster', cursive;
+}
+p{
+font-family: 'Lobster Two', cursive;
+}
+
+.rounded{
+  padding: 20px;
+  border-radius: 100%;
+  background-color: #406E8E;
+}
