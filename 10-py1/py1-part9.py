@@ -1,4 +1,4 @@
-#####################################
+  #####################################
 #### PART 9: FUNCTION EXERCISES #####
 #####################################
 
@@ -106,6 +106,9 @@ def end_other(a, b):
 for a, b in end:
     print(end_other(a,b))
 
+# Alternative suggested by tutor ...
+#return(b.endswith(a) or a.endswith(b))
+
 #####################
 ## -- PROBLEM 4 -- ##
 #####################
@@ -132,7 +135,7 @@ def doubleChar(str):
     # new_word = ''.join(doubles)
 
     # Third Attempt
-    new_word = ''.join([(letter+letter) for letter in str])
+    new_word = ''.join([(letter*2) for letter in str])
 
     return new_word
 
@@ -170,6 +173,8 @@ def no_teen_sum(a, b, c):
 def fix_teen(n):
     if (n > 12 and n < 15) or (n > 16 and n < 20):
         # print(f'Selected : {n}')
+        # Intructor answer ...
+        # if n [13,14,17,18,19]
         return 0
     else :
         # print(f'Not caught: {n}')
