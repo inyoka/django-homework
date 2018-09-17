@@ -28,21 +28,26 @@ def generate_clues(code, user_guess):
     else:
         return clues
 
-print("Welcome code breakers!")
 
-secret_code = code_generator()
+def main():
+    print("Welcome code breakers!")
 
-clue_report = []
+    secret_code = code_generator()
 
-while clue_report != "CODE CRACKED!":
-    guess = get_guess()
+    clue_report = []
 
-    clue_report = generate_clues(guess, secret_code)
-    print("here is the result of your guess:")
-    for clue in clue_report:
-        print(clue)
+    while clue_report != "CODE CRACKED!":
+        guess = get_guess()
+
+        clue_report = generate_clues(guess, secret_code)
+        print("Here is the result of your guess:")
+        for clue in clue_report:
+            print(clue)
+
+    clues = ["Close: You've guessed a correct number but in the wrong position",
+    "Match: You've guessed a correct number in the correct position",
+    "Nope: You haven't guess any of the numbers correctly"]
 
 
-clues = ["Close: You've guessed a correct number but in the wrong position",
-"Match: You've guessed a correct number in the correct position",
-"Nope: You haven't guess any of the numbers correctly"]
+if __name__ == "__main__":
+    main()
